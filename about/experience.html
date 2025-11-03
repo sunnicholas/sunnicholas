@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>工作经历 - Nicholas Sun</title>
+    <title>项目经历 - codes</title>
     <style>
         * {
             margin: 0;
@@ -74,6 +74,7 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
@@ -113,31 +114,38 @@
 
         .experience-item {
             margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #eee;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
         }
 
         .experience-item:last-child {
-            border-bottom: none;
             margin-bottom: 0;
         }
 
-        .job-title {
-            font-size: 1.5rem;
+        .job-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .company-name {
+            font-size: 1.4rem;
             color: #667eea;
+            font-weight: bold;
             margin-bottom: 0.5rem;
         }
 
-        .company {
-            font-size: 1.2rem;
+        .job-title {
+            font-size: 1.1rem;
             color: #764ba2;
+            font-weight: 600;
             margin-bottom: 0.5rem;
         }
 
         .duration {
             color: #666;
             font-style: italic;
-            margin-bottom: 1rem;
+            font-size: 0.95rem;
         }
 
         .job-description {
@@ -145,13 +153,37 @@
             line-height: 1.8;
         }
 
+        .job-description h4 {
+            color: #667eea;
+            margin: 1.5rem 0 0.8rem 0;
+            font-size: 1.1rem;
+        }
+
         .job-description ul {
-            margin-left: 2rem;
-            margin-top: 1rem;
+            margin-left: 1.5rem;
+            margin-top: 0.8rem;
         }
 
         .job-description li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .job-description strong {
+            color: #333;
+        }
+
+        .project-section {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+
+        .project-title {
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
         }
 
         footer {
@@ -160,6 +192,21 @@
             text-align: center;
             padding: 2rem 0;
             margin-top: 4rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #667eea;
         }
 
         @media (max-width: 768px) {
@@ -178,17 +225,21 @@
             nav {
                 padding: 0 1rem;
             }
+
+            .experience-item {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Nicholas Sun</div>
+            <div class="logo">codes</div>
             <ul class="nav-links">
                 <li><a href="../">首页</a></li>
                 <li><a href="./">关于我</a></li>
-                <li><a href="experience.html" style="color: #ffd700;">工作经历</a></li>
+                <li><a href="experience.html" style="color: #ffd700;">项目经历</a></li>
                 <li><a href="../#services">服务</a></li>
                 <li><a href="../#contact">联系</a></li>
             </ul>
@@ -198,96 +249,175 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>工作经历</h1>
-                <p>我的职业发展历程与项目经验</p>
-                <a href="./" class="back-button">← 返回关于我</a>
+                <h1>项目经历</h1>
+                <p>我的职业发展历程与项目成就</p>
+                <a href="../" class="back-button">返回首页</a>
             </div>
         </section>
 
-        <div class="container">
-            <section class="experience-section">
+        <section class="experience-section">
+            <div class="container">
+                
+                <!-- 西安西自仪检验检测有限公司 -->
                 <div class="experience-item">
-                    <h3 class="job-title">高级前端开发工程师</h3>
-                    <h4 class="company">科技创新公司</h4>
-                    <p class="duration">2022年3月 - 至今</p>
+                    <div class="job-header">
+                        <div class="company-name">西安西自仪检验检测有限公司</div>
+                        <div class="job-title">信息化部部长</div>
+                        <div class="duration">2025.6 - 至今</div>
+                    </div>
                     <div class="job-description">
-                        <p>负责公司核心产品的前端架构设计与开发，带领团队完成多个重要项目。</p>
+                        <h4>主要职责与成就：</h4>
                         <ul>
-                            <li>设计并实现了基于 React 的组件库，提升开发效率 40%</li>
-                            <li>优化前端性能，页面加载速度提升 60%</li>
-                            <li>建立前端代码规范和自动化测试流程</li>
-                            <li>指导初级开发人员，提升团队整体技术水平</li>
+                            <li><strong>全面负责企业信息化团队组建与企业信息化产品、系统建设</strong></li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- 瑞特认证检测集团 -->
                 <div class="experience-item">
-                    <h3 class="job-title">前端开发工程师</h3>
-                    <h4 class="company">互联网科技公司</h4>
-                    <p class="duration">2020年6月 - 2022年2月</p>
+                    <div class="job-header">
+                        <div class="company-name">（陕西）瑞特认证检测集团</div>
+                        <div class="job-title">产品经理&项目经理</div>
+                        <div class="duration">2023.4 - 2025.4</div>
+                    </div>
                     <div class="job-description">
-                        <p>参与多个 Web 应用的开发，积累了丰富的项目经验。</p>
+                        <h4>主要职责与成就：</h4>
                         <ul>
-                            <li>开发响应式网站，支持多种设备访问</li>
-                            <li>与后端团队协作，完成 API 接口对接</li>
-                            <li>使用 Vue.js 构建单页应用，提升用户体验</li>
-                            <li>参与产品需求分析和技术方案设计</li>
+                            <li><strong>产品设计：</strong>负责多个SaaS平台（如认证平台、检测检验平台、能力验证平台）的需求调研、需求分析、原型设计及PRD文档编写，实现定制项目的全过程管理</li>
+                            <li><strong>需求实现跟进：</strong>组织需求评审会议，将PRD及原型设计材料传递给研发团队，并全程跟进研发实现至交付，确保项目按时高质量完成</li>
+                            <li><strong>项目综合支持：</strong>为项目售前、交付及运维提供全面的产品支持，包括技术资料撰写、项目汇报、典型产品资料输出等，传递产品价值及品牌影响力</li>
+                            <li><strong>项目管理：</strong>负责项目进度管理及风险把控，确保项目按时交付并满足客户需求</li>
+                            <li><strong>行业贡献：</strong>参与编写《国家标准产品认证信息系统建设指南》和《产品认证信息系统数据接口规范》，推动行业标准化进程</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- 西安阅图信息科技 -->
                 <div class="experience-item">
-                    <h3 class="job-title">初级前端开发工程师</h3>
-                    <h4 class="company">软件开发公司</h4>
-                    <p class="duration">2019年3月 - 2020年5月</p>
+                    <div class="job-header">
+                        <div class="company-name">西安阅图信息科技有限公司</div>
+                        <div class="job-title">产品经理兼项目经理</div>
+                        <div class="duration">2022.4 - 2023.3</div>
+                    </div>
                     <div class="job-description">
-                        <p>作为职业生涯的起点，在这里学习了扎实的前端基础知识。</p>
+                        <h4>主要职责与成就：</h4>
                         <ul>
-                            <li>掌握 HTML、CSS、JavaScript 核心技术</li>
-                            <li>学习使用 Git 进行版本控制</li>
-                            <li>参与小型项目的开发和维护</li>
-                            <li>培养了良好的编程习惯和团队协作能力</li>
+                            <li><strong>产品设计与管理：</strong>负责医药电商SaaS平台"青蛙药药"的整体规划、需求分析、原型设计及PRD文档编写，带领13人团队完成产品开发与上线</li>
+                            <li><strong>需求实现跟进：</strong>协调开发团队，确保产品按计划上线，覆盖AppStore、应用宝等主流应用商店</li>
+                            <li><strong>市场表现：</strong>平台日均销售额突破万元，日活跃用户数达数百，销售网络覆盖全国多个城市</li>
+                            <li><strong>项目综合支持：</strong>为平台提供全面的技术支持，包括技术文档撰写、项目汇报及产品资料输出，确保产品顺利推广</li>
                         </ul>
                     </div>
                 </div>
-            </section>
-        </div>
+
+                <!-- 西安汤谷信息科技 -->
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="company-name">西安汤谷信息科技有限公司</div>
+                        <div class="job-title">软件开发工程师/产品经理</div>
+                        <div class="duration">2015.4 - 2022.4</div>
+                    </div>
+                    <div class="job-description">
+                        <div class="project-section">
+                            <div class="project-title">停车场无人收费管理系统（2B&2C）</div>
+                            <ul>
+                                <li><strong>产品设计：</strong>负责停车场无人收费管理系统的需求调研、竞品分析、原型设计及PRD文档编写，全程管理产品开发与上线</li>
+                                <li><strong>需求实现跟进：</strong>带领团队走访上百家停车场，深入了解用户需求，确保产品功能满足市场需求</li>
+                                <li><strong>项目管理：</strong>协调开发团队，确保项目按时交付，系统已在陕西、甘肃多地上线，帮助业主降低运营成本高达50%</li>
+                                <li><strong>产品特色：</strong>系统涵盖了移动APP端、PAD端、WEB端以及数据监控大屏端，提供全方位的管理和监控功能</li>
+                                <li><strong>技术资料撰写：</strong>为系统编写技术文档及用户手册，确保产品顺利推广和使用</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-section">
+                            <div class="project-title">LEX法务平台</div>
+                            <ul>
+                                <li><strong>后台开发：</strong>负责后台PHP开发工作，确保系统的稳定性和高效性</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <div class="project-title">其他项目经历（开发工程师）</div>
+                            <ul>
+                                <li><strong>汽车中控屏系统、共享车辆系统研发</strong></li>
+                                <li><strong>国家电网电力用户用电信息采集系统（2G）：</strong>参与系统的设计与开发，提升电力用户的用电信息采集效率和准确性</li>
+                                <li><strong>电池负极材料生产及检测数字化管理系统：</strong>负责系统的用户研究和竞品分析，确保系统的实用性和先进性</li>
+                                <li><strong>沥青水泥拌合站与沥青光谱分析系统：</strong>参与工业数字化项目的开发与管理，提升生产过程的自动化和智能化水平</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 大阪市立大学留学经历 -->
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="company-name">大阪市立大学留学经历</div>
+                        <div class="job-title">硕士研究生</div>
+                        <div class="duration">2011.3 - 2014.12</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li><strong>留学经历：</strong>2011年春季，远赴日本留学，期间积极参与当地的社会实践工作，同时顺利完成各项语言考试</li>
+                            <li><strong>学术成就：</strong>2012年，成功考入全日本排名前25的大阪市立大学工学部，攻读硕士学位</li>
+                            <li><strong>综合素质：</strong>留学期间不仅在本专业上更进一步，还通过社会实践活动积累了丰富的跨文化沟通和团队协作经验</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- InetSoft Technology Corporation -->
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="company-name">InetSoft Technology Corporation</div>
+                        <div class="job-title">Java工程师</div>
+                        <div class="duration">2010.6 - 2011.1</div>
+                    </div>
+                    <div class="job-description">
+                        <h4>公司背景：</h4>
+                        <p>美国英网软件技术公司（西安分公司），总部位于美国，设有北京和西安两个办事处，专注于软件开发、测试和云计算等领域</p>
+                        <h4>工作职责：</h4>
+                        <ul>
+                            <li><strong>GUI模块开发：</strong>负责客户需求软件中的图形用户界面（GUI）模块开发，确保界面设计符合客户操作习惯</li>
+                            <li><strong>客户需求分析：</strong>与客户密切沟通，深入理解其业务流程和技术需求，确保界面设计符合客户的实际操作习惯</li>
+                            <li><strong>技术栈：</strong>主要使用Java进行开发，熟练掌握相关的前端和后端技术，确保界面的高性能和稳定性</li>
+                            <li><strong>离职原因：</strong>为了追求更高的学术目标，决定前往日本留学，继续深造</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 大连华信计算机技术股份有限公司 -->
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="company-name">大连华信计算机技术股份有限公司</div>
+                        <div class="job-title">ERP工程师（实习）</div>
+                        <div class="duration">2010.3 - 2010.6</div>
+                    </div>
+                    <div class="job-description">
+                        <h4>公司背景：</h4>
+                        <p>大连华信是国内第二大软件外包公司，专注于计算机应用软件开发、系统集成、软件外包服务和嵌入式软件等业务。公司在北京、济南、天津、深圳、沈阳、成都、长春、昆山及日本东京设有分支机构</p>
+                        <h4>工作职责：</h4>
+                        <ul>
+                            <li><strong>HR资源管理模块开发：</strong>作为ERP项目HR资源管理模块的主要开发人员，负责员工信息管理系统的数据库建立、维护和基础界面设计</li>
+                            <li><strong>项目协调：</strong>在项目中负责进度管理，协调本组与其他小组之间的项目对接，确保项目按计划顺利推进</li>
+                            <li><strong>技术应用：</strong>主要使用Java进行开发，熟练掌握数据库管理和界面设计的相关技术，确保系统的高效运行和用户体验</li>
+                            <li><strong>离职原因：</strong>顺利完成学业后，因毕业而结束实习</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Nicholas Sun. 保留所有权利。</p>
+            <p>&copy; 2025 codes. 保留所有权利。</p>
             <div class="social-links">
                 <a href="#" title="GitHub">GitHub</a>
                 <a href="#" title="LinkedIn">LinkedIn</a>
                 <a href="#" title="邮箱">Email</a>
-                <a href="../docs/" title="查看项目路径配置规则">目录规则</a>
+                <a href="../docs/github-pages-路径规则.md" title="查看项目路径配置规则">目录规则</a>
             </div>
         </div>
     </footer>
-
-    <script>
-        // 平滑滚动效果
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // 导航栏滚动效果
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.color = '#333';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.1)';
-                header.style.color = 'white';
-            }
-        });
-    </script>
 </body>
 </html>
